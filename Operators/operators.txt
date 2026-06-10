@@ -1,0 +1,21 @@
+symbols that tell a compiler to perform some operations
+sum = a + b
++ = operator
+a,b = operand 
+
+types of operator 
+arithmetic operator
+relational operator
+logical operator
+bitwise operator 
+assignment operator
+ternary operator
+
+arithmetic operator = binary -> - + - * / %
+                      unary  -> ++ -- (pre increment and post increment) ++a and a++
+
+relational operator -> == , != , > , < , >= , <=
+
+logical operator -> && || !
+
+assignment operator -> +=, -= , /= , *=
