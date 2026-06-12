@@ -1,3 +1,4 @@
+package ConditionalStatements;
 import java.util.*;
 public class PrintOddOrEven {
     public static void main(String[] args) {
