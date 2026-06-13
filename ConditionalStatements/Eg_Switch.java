@@ -1,3 +1,4 @@
+package ConditionalStatements;
 public class Eg_Switch {
     public static void main(String[] args) {
         int num = 1;

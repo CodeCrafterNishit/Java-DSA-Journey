@@ -1,3 +1,4 @@
+package ConditionalStatements;
 public class HW2 {
     public static void main(String[] args) {
         double fever = 103.5;
