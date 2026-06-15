@@ -1,0 +1,16 @@
+while loop
+for loop
+do while loop
+
+while(condtion){
+    //do something
+}
+
+for(initialization;condition;updation){
+    //do something
+}
+
+do-while loop
+do{
+    //do something
+}while(condition);
