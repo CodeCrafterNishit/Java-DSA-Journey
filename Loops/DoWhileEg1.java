@@ -1,4 +1,5 @@
 package Loops;
+
 import java.util.*;
 
 public class DoWhileEg1 {
@@ -12,5 +13,6 @@ public class DoWhileEg1 {
             }
             System.out.println(n);
         } while (true);
+        sc.close();
     }
 }
