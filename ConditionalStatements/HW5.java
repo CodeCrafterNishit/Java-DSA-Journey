@@ -1,3 +1,4 @@
+package ConditionalStatements;
 import java.util.*;
 
 public class HW5 {
@@ -21,4 +22,3 @@ public class HW5 {
         sc.close();
     }
 }
-
