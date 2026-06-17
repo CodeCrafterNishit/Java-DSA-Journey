@@ -1,0 +1,15 @@
+function - reuseable block of code
+syntax->
+
+returnType name(){
+    //body
+    return statement
+}
+
+with parameters
+returnType name(type param1 , type param2){ 
+    //body
+    return statement
+}
+
+note-java always calls by value
