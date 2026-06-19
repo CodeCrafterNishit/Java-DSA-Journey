@@ -1,5 +1,3 @@
-package Functions&Methods;
-
 import java.util.*;
 
 public class FncWithParamsEg {

@@ -20,3 +20,4 @@ public class BinomialCoefficient {
         System.out.println(BinCoeff(5, 2));
     }
 }
+

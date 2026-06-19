@@ -13,3 +13,13 @@ returnType name(type param1 , type param2){
 }
 
 note-java always calls by value
+
+two types of methods 
+user-defined methods and in-built methods 
+--> factorial , product , etc
+inbuilt
+-->already defined like scanner class Math-->pow ,sqrt,max etc
+
+function overloading 
+--> multiple functions with same name but different parameters
+only depends on the parameters and not on the return type parameters should be diff not the return type

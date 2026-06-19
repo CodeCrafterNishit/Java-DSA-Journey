@@ -1,0 +1,119 @@
+JAVA MATH CLASS
+
+The Math class in Java provides methods for performing mathematical operations.
+It belongs to the java.lang package, so no import statement is required.
+
+1. Math.min()
+
+Purpose:
+Returns the smaller of two values.
+
+Syntax:
+Math.min(a, b)
+
+Example:
+System.out.println(Math.min(10, 20));
+
+Output:
+10
+
+
+2. Math.max()
+
+Purpose:
+Returns the larger of two values.
+
+Syntax:
+Math.max(a, b)
+
+Example:
+System.out.println(Math.max(10, 20));
+
+Output:
+20
+
+
+3. Math.sqrt()
+
+Purpose:
+Returns the square root of a number.
+
+Syntax:
+Math.sqrt(number)
+
+Example:
+System.out.println(Math.sqrt(25));
+
+Output:
+5.0
+
+
+4. Math.pow()
+
+Purpose:
+Returns the value of a number raised to a power.
+
+Syntax:
+Math.pow(base, exponent)
+
+Example:
+System.out.println(Math.pow(2, 3));
+
+Output:
+8.0
+
+
+5. Math.avg()
+
+Purpose:
+There is NO Math.avg() method in Java's Math class.
+
+To calculate average, use:
+double avg = (a + b) / 2.0;
+
+Example:
+double avg = (10 + 20) / 2.0;
+System.out.println(avg);
+
+Output:
+15.0
+
+
+6. Math.abs()
+
+Purpose:
+Returns the absolute (positive) value of a number.
+
+Syntax:
+Math.abs(number)
+
+Example:
+System.out.println(Math.abs(-15));
+
+Output:
+15
+
+
+Complete Program:
+
+public class MathDemo {
+    public static void main(String[] args) {
+        System.out.println("Min = " + Math.min(10, 20));
+        System.out.println("Max = " + Math.max(10, 20));
+        System.out.println("Square Root = " + Math.sqrt(25));
+        System.out.println("Power = " + Math.pow(2, 3));
+
+        double avg = (10 + 20) / 2.0;
+        System.out.println("Average = " + avg);
+
+        System.out.println("Absolute Value = " + Math.abs(-15));
+    }
+}
+
+Output:
+Min = 10
+Max = 20
+Square Root = 5.0
+Power = 8.0
+Average = 15.0
+Absolute Value = 15
