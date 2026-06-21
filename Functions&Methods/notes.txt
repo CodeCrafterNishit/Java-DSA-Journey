@@ -1,0 +1,5 @@
+Today:
+- Completed Functions & Methods
+- Learned parameterized functions
+- Read Java Math class methods
+- Next: Advanced Patterns
