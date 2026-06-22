@@ -1,3 +1,4 @@
+package AdvancedPatterns;
 public class InvertedRotatedHalfPyramid {
     public static void Inverted_Rotated_Half_Pyramid(int n) {
         for (int i = 1; i <= n; i++) {

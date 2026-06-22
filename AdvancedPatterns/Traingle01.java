@@ -1,3 +1,4 @@
+package AdvancedPatterns;
 public class Traingle01 {
     public static void Traingle_1_0(int n) {
         for (int i = 1; i <= n; i++) {

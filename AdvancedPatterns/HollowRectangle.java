@@ -1,3 +1,4 @@
+package AdvancedPatterns;
 public class HollowRectangle {
     public static void Hollow_Rectangle(int totalRows, int totalCols) {
         for (int i = 1; i <= totalRows; i++) {
