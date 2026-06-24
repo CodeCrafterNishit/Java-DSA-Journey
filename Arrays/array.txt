@@ -1,0 +1,4 @@
+list of elements of the same type stored in contigous memory location
+creating an array
+datatype arrayname[] = new datatype [size];
+we can pass arrays as arguements
