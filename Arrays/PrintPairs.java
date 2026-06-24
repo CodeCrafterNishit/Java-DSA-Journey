@@ -1,3 +1,4 @@
+package Arrays;
 public class PrintPairs {
     public static void Pairs(int arr[]) {
         int totalPairs = 0;

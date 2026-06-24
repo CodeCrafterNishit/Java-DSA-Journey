@@ -1,3 +1,4 @@
+package Arrays;
 public class PrintSubarrays {
     public static void Print_Subarrays(int arr[]) {
         int totalSubArr = 0;
