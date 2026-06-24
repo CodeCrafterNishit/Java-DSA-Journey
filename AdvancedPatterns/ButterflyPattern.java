@@ -1,3 +1,4 @@
+package AdvancedPatterns;
 public class ButterflyPattern {
     public static void Butterfly_Pattern(int n) {
         for (int i = 1; i <= n; i++) {

@@ -1,3 +1,4 @@
+package AdvancedPatterns;
 public class SolidRhombusPattern {
     public static void Solid_Rhombus_Pattern(int n) {
         for (int i = 1; i <= n; i++) {

@@ -1,3 +1,4 @@
+package AdvancedPatterns;
 public class HollowRhombus {
     public static void Hollow_Rhombus(int n) {
         for (int i = 1; i <= n; i++) {

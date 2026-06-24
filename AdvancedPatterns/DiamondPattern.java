@@ -1,3 +1,4 @@
+package AdvancedPatterns;
 public class DiamondPattern {
     public static void Diamond_Pattern(int n) {
         for (int i = 1; i <= n; i++) {
