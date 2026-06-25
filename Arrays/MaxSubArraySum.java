@@ -1,4 +1,4 @@
-import java.util.*;
+package Arrays;
 
 public class MaxSubArraySum {
     public static void MaxSumSubArray(int arr[]) {
