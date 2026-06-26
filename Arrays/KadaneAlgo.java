@@ -1,3 +1,4 @@
+package Arrays;
 public class KadaneAlgo {
     public static void Kadanes(int arr[]) {
         boolean isNegative = true;

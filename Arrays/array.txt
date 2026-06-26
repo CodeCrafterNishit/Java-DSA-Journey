@@ -2,3 +2,24 @@ list of elements of the same type stored in contigous memory location
 creating an array
 datatype arrayname[] = new datatype [size];
 we can pass arrays as arguements
+
+
+Maximum Subarray Sum - 3 approaches
+
+Brute Force
+O(n³)
+↓
+Generate every subarray
+Calculate every sum
+
+Prefix Sum
+O(n²)
+↓
+Generate every subarray
+Calculate sum in O(1)
+
+Kadane's Algorithm
+O(n)
+↓
+No need to generate subarrays
+Maintain a running sum
