@@ -1,3 +1,4 @@
+package Arrays;
 public class PrefixSumMaxSumSubarray {
     public static void PrefixSum_MaxSumSubarray(int arr[]) {
         int currSum = 0;
