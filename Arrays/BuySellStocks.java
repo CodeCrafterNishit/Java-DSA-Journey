@@ -1,5 +1,4 @@
 package Arrays;
-
 public class BuySellStocks {
     public static int BuyAndSellStocks(int prices[]) {
         int buyPrice = Integer.MAX_VALUE;
