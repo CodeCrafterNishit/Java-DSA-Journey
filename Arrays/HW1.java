@@ -18,4 +18,5 @@ public class HW1 {
     }
 }
 
-//tc-->O(n2)
+//tc-->O(n2) 
+//more of like comparison thats why used nested loops to compare elements
