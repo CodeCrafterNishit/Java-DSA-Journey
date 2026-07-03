@@ -1,9 +1,11 @@
+package Arrays;
 public class Array2D {
     public static void main(String[] args) {
         // declaration
         int[][] arr;
         // allocation
         arr = new int[3][4]; // 0-3 rows and 0-4 columns
+        arr[0][0] = 100;
         int arr1[][] = {
                 { 1, 2, 10, 20 }, { 3, 4, 7, 14 }, { 5, 6, 15 }, { 7, 8, 100 }
         };
@@ -25,8 +27,6 @@ public class Array2D {
         arr2[1] = new int[3];
         arr2[2] = new int[5];
         arr2[3] = new int[1];
-        
-        
     }
 }
 
