@@ -1,0 +1,21 @@
+Strings is a type of class and it has predefined methods
+sequence of characters
+creating strings 
+String str = new String ("Love");
+or 
+String str1 = "Love";
+
+the value assigned to str which is "Love" gets stored in String pool and str and str1 both
+ points or refers to same "Love" inside the string pool and both variable names str and str1 
+ they get stored in stack memory 
+
+ Strings in java are immutable we cannot change the actual string value but we can make a different referal 
+ point for that particular variable in our string pool where for the same variable firstly created 
+ value and new value will be there and the string variable will now access or refer to the new value 
+
+ HW-string builder
+
+ Strings Comparison 
+ ==  checks for refer point if both are refering to same value in string pool
+ .equals() checks for content inside both variables and is also case sensitive
+ .equalsIgnoreCase() incase we dont want case sensitive Comparison then we can use this 
