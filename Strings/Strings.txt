@@ -55,3 +55,9 @@ endsWith(String suffix) → checks if the string ends with a suffix.
 indexOf(String str) → returns the index of the first occurrence.
 
 lastIndexOf(String str) → returns the index of the last occurrence.
+
+isEmpty() → checks if the string is empty.
+
+concat(String str) → joins two strings.
+
+toCharArray() → converts the string into a character array.
