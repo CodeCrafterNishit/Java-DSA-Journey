@@ -19,3 +19,39 @@ the value assigned to str which is "Love" gets stored in String pool and str and
  ==  checks for refer point if both are refering to same value in string pool
  .equals() checks for content inside both variables and is also case sensitive
  .equalsIgnoreCase() incase we dont want case sensitive Comparison then we can use this 
+
+
+ Common String Methods in Java
+length() → returns the length of the string.
+
+charAt(int index) → returns the character at a given index.
+
+substring(int beginIndex, int endIndex) → extracts part of the string.
+
+equals(String another) → compares two strings for equality.
+
+equalsIgnoreCase(String another) → compares strings ignoring case.
+
+compareTo(String another) → compares strings lexicographically.
+
+toUpperCase() → converts all characters to uppercase.
+
+toLowerCase() → converts all characters to lowercase.
+
+trim() → removes leading and trailing spaces.
+
+replace(char oldChar, char newChar) → replaces characters.
+
+replaceAll(String regex, String replacement) → replaces substrings using regex.
+
+split(String regex) → splits the string into an array based on a delimiter.
+
+contains(CharSequence s) → checks if the string contains a sequence.
+
+startsWith(String prefix) → checks if the string starts with a prefix.
+
+endsWith(String suffix) → checks if the string ends with a suffix.
+
+indexOf(String str) → returns the index of the first occurrence.
+
+lastIndexOf(String str) → returns the index of the last occurrence.
