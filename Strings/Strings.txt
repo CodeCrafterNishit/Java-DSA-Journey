@@ -21,7 +21,7 @@ the value assigned to str which is "Love" gets stored in String pool and str and
  .equalsIgnoreCase() incase we dont want case sensitive Comparison then we can use this 
 
 
- Common String Methods in Java
+Common String Methods in Java
 length() → returns the length of the string.
 
 charAt(int index) → returns the character at a given index.
