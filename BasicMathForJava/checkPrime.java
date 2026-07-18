@@ -10,7 +10,7 @@ public class checkPrime {
         return true;
     }
       public static boolean CheckPrimeNum2(int n) {
-        for (int i = 2; i*i <= n - 1; i++) {
+        for (int i = 2; i*i <= n ; i++) {
             if (n % i == 0) {
                 return false;
             }
