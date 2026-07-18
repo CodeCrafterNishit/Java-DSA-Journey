@@ -18,9 +18,19 @@ public class checkPrime {
         return true;
     }
 
+    public static void PrintPrime(int n){
+        for(int i = 2;i<=n;i++){
+        boolean isPrime = CheckPrimeNum2(i);
+            if(isPrime == true){
+                System.out.println(i);
+            }
+        }
+    }
+
     public static void main(String[] args) {
         int n = 101;
-        System.out.println(CheckPrimeNum(n));
-        System.out.println(CheckPrimeNum2(n));
+        // System.out.println(CheckPrimeNum(n));
+        // System.out.println(CheckPrimeNum2(n));
+        PrintPrime(n);
     }
 }
