@@ -1,0 +1,64 @@
+Java Basic OOP Concepts
+
+1. Class
+   - A blueprint for objects.
+   - Defines properties (fields) and behaviors (methods).
+   Example:
+   class Car {
+       String color;
+       void drive() {
+           System.out.println("Car is driving");
+       }
+   }
+
+2. Object
+   - An instance of a class.
+   - Created using the 'new' keyword.
+   Example:
+   Car myCar = new Car();
+
+3. Inheritance
+   - Mechanism to acquire properties and behaviors of another class.
+   - Promotes code reuse.
+   Example:
+   class Vehicle {
+       void start() { System.out.println("Vehicle starts"); }
+   }
+   class Bike extends Vehicle {
+       void ride() { System.out.println("Bike rides"); }
+   }
+
+4. Polymorphism
+   - Ability of an object to take many forms.
+   - Two types:
+     a) Compile-time (Method Overloading)
+     b) Runtime (Method Overriding)
+   Example:
+   class Shape {
+       void draw() { System.out.println("Drawing Shape"); }
+   }
+   class Circle extends Shape {
+       @Override
+       void draw() { System.out.println("Drawing Circle"); }
+   }
+
+5. Abstraction
+   - Hiding implementation details and showing only functionality.
+   - Achieved using abstract classes and interfaces.
+   Example:
+   abstract class Animal {
+       abstract void sound();
+   }
+   class Dog extends Animal {
+       void sound() { System.out.println("Bark"); }
+   }
+
+6. Encapsulation
+   - Wrapping data (fields) and code (methods) together.
+   - Achieved using private fields and public getters/setters.
+   Example:
+   class Student {
+       private String name;
+       public String getName() { return name; }
+       public void setName(String n) { name = n; }
+   }
