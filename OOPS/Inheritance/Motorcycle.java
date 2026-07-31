@@ -1,4 +1,4 @@
-package OOPS;
+package OOPS.Inheritance;
 
 public class Motorcycle extends vehicle {
 
