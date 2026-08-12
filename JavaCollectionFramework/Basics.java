@@ -6,6 +6,8 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Stack;
+import java.util.Vector;
 
 public class Basics {
     public static void main(String[] args) {
@@ -115,5 +117,59 @@ public class Basics {
         System.out.println(ll.offer(101));
         System.out.println(ll);
 
+        //Vectors
+        // Vector
+        System.out.println("----Vectors----");
+        Vector<Integer> vec = new Vector<>();
+        vec.add(100);
+        vec.add(101);
+        System.out.println(vec);
+
+        // Assuming list is another collection
+        List<Integer> lst = new ArrayList<>();
+        lst.addAll(vec);
+        System.out.println(lst);
+
+        lst.remove(1); // removes element at index 4
+        System.out.println(lst);
+
+        lst.removeAll(vec); // removes all elements present in vec
+        System.out.println(lst);
+
+        vec.add(100);
+        vec.add(101);
+        System.out.println(vec.size());
+        System.out.println(vec);
+
+        List<Integer> lst2 = new ArrayList<>();
+        lst2.clear();
+        System.out.println(vec);
+
+        // iterator
+        Iterator<Integer> iterator_1 = vec.iterator();
+        while (iterator_1.hasNext()) {
+            System.out.println("Element : " + iterator_1.next());
+        }
+
+        // Vector doesn’t have addFirst/addLast, so we use insert at index
+        vec.insertElementAt(99, 0); // add at beginning
+        vec.add(98); // add at end
+        System.out.println(vec);
+
+        System.out.println(vec.firstElement()); // get first
+        System.out.println(vec.lastElement());  // get last
+
+        //Stacks
+        Stack<Integer> stk = new Stack<>();
+        stk.push(10);
+        stk.push(11);
+        stk.push(12);
+        stk.push(13);
+        System.out.println(stk);
+        stk.pop();
+        System.out.println(stk);
+        System.out.println(stk.peek());
+        System.out.println(stk.search(12));
+        System.out.println(stk.empty());
     }
 }
