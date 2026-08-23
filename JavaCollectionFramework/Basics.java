@@ -8,6 +8,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
 import java.util.Vector;
+ 
+//List -> ArrayList LinkedList Vector Stack
 
 public class Basics {
     public static void main(String[] args) {
