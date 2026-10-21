@@ -8,6 +8,11 @@ public class variables {
         System.out.println(name);
         a = 50;
         System.out.println(a);
-
+        // int x; needs to be initialized
+        // System.out.println(x);
+        // var x = 5.5;
+        // x = "Hello";
+        // System.out.println(x);
+        
     }
 }

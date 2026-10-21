@@ -1,0 +1,141 @@
+Time and Space Complexity Notes
+
+1. What is Complexity?
+
+Complexity measures how an algorithm grows as input size n increases.
+
+-   Time Complexity: Number of operations performed.
+-   Space Complexity: Extra memory used (excluding input unless stated).
+
+Why? - Predicts scalability. - Hardware-independent.
+
+------------------------------------------------------------------------
+
+Asymptotic Notations
+
+Big O - Upper Bound (Worst Case)
+
+Example: Linear Search: O(n)
+
+Omega (Ω) - Best Case
+
+Linear Search when first element matches: Ω(1)
+
+Theta (Θ) - Tight Bound
+
+Merge Sort: Θ(n log n)
+
+------------------------------------------------------------------------
+
+Common Time Complexities
+
+  Complexity   Example
+  ------------ ---------------------
+  O(1)         Access array index
+  O(log n)     Binary Search
+  O(n)         Linear Search
+  O(n log n)   Merge Sort
+  O(n²)        Nested loops
+  O(2^n)       Recursive Fibonacci
+  O(n!)        Permutations
+
+------------------------------------------------------------------------
+
+Rules
+
+Ignore constants: 5n -> O(n)
+
+Keep dominant term: n² + n + 100 -> O(n²)
+
+Sequential loops: for n + for n => O(n)
+
+Nested loops: for n: for n: => O(n²)
+
+Different variables: for n: for m: => O(n+m)
+
+Nested different variables: for n: for m: => O(nm)
+
+------------------------------------------------------------------------
+
+Examples
+
+O(1)
+
+    print(arr[5])
+
+O(log n)
+
+Binary Search halves search space each iteration.
+
+O(n)
+
+    for i in arr:
+        print(i)
+
+O(n²)
+
+    for i in arr:
+        for j in arr:
+            print(i,j)
+
+O(n log n)
+
+Merge Sort: Split -> Merge recursively.
+
+------------------------------------------------------------------------
+
+Space Complexity
+
+O(1)
+
+    sum = 0
+
+Only constant variables.
+
+O(n)
+
+    new = []
+    for x in arr:
+        new.append(x)
+
+Extra array grows with n.
+
+Recursive Space
+
+Recursive calls consume stack.
+
+Factorial recursion: Time = O(n) Space = O(n)
+
+Iterative factorial: Time = O(n) Space = O(1)
+
+------------------------------------------------------------------------
+
+Cheat Sheet
+
+Binary Search -> O(log n), O(1) Linear Search -> O(n), O(1) Bubble Sort
+-> O(n²), O(1) Selection Sort -> O(n²), O(1) Insertion Sort -> O(n²),
+O(1) Merge Sort -> O(n log n), O(n) Quick Sort (avg) -> O(n log n),
+O(log n)
+
+------------------------------------------------------------------------
+
+How to Find Complexity
+
+1.  Count loops.
+2.  Multiply nested loops.
+3.  Add sequential loops.
+4.  Check recursive calls.
+5.  Ignore constants.
+6.  Keep dominant term.
+
+------------------------------------------------------------------------
+
+Interview Tips
+
+-   Arrays: access O(1), search O(n)
+-   HashMap average lookup O(1)
+-   Binary Search only on sorted data.
+-   Recursion uses stack memory.
+-   Prefer O(n log n) over O(n²) for large inputs.
+
+Practice analyzing every algorithm before coding.
