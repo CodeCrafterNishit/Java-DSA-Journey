@@ -1,5 +1,7 @@
 package ARRAY_PROBLEM_SOLVING;
 
+import java.util.Arrays;
+
 public class avg_array {
     public static double getAvg(int[] arr) {
         int sum = 0;
@@ -69,9 +71,61 @@ public class avg_array {
         return Count;
     }
 
+    public static int getUnsortedElement(int arr[]) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i + 1] <= arr[i]) {
+                return arr[i + 1];
+            }
+        }
+        return -1;
+    }
+
+    public static int[] swapAlternate(int arr[]) {
+
+        for (int i = 0; i < arr.length - 1; i = i + 2) {
+            int temp = arr[i];
+            arr[i] = arr[i + 1];
+            arr[i + 1] = temp;
+        }
+        return arr;
+    }
+
+    public static int[] arrIntersection(int arr1[], int arr2[]) {
+        int ansArr[] = new int[arr1.length];
+        int k = 0;
+        for (int i = 0; i < arr1.length; i++) {
+            for (int j = 0; j < arr2.length; j++) {
+                if (arr1[i] == arr2[j]) {
+                    // store in the ans array
+                    ansArr[k] = arr1[i];
+                    k++;
+                }
+            }
+        }
+        return Arrays.copyOf(ansArr, k);
+    }
+
+    public static int[] altExtremeElements(int arr[]) {
+        int start = 0;
+        int end = arr.length - 1;
+        int i = 0;
+        int ansArr[] = new int[arr.length];
+        while (start < end) {
+            ansArr[i] = arr[start];
+            ansArr[i + 1] = arr[end];
+            start++;
+            end--;
+            i = i + 2;
+        }
+        if (start == end) {
+            ansArr[i] = arr[start];
+        }
+        return ansArr;
+    }
+
     public static void main(String[] args) {
         int[] arr = { 8, -1, 2, -4, 5 };
-        int [] arr1 = {0,0,1,0,1,1,1};
+        int[] arr1 = { 0, 0, 1, 0, 1, 1, 1 };
         System.out.println(getAvg(arr));
         int ans[] = mulBy10(arr);
         System.out.println("Printing ans array:");
@@ -86,7 +140,19 @@ public class avg_array {
         System.out.println("Positive sum = " + PosNegSum[0]);
         System.out.println("Negative sum = " + PosNegSum[1]);
         int CountAns[] = ZeroOnesCount(arr1);
-        System.out.println("Zero count = " + CountAns[0]); 
+        System.out.println("Zero count = " + CountAns[0]);
         System.out.println("Ones Count = " + CountAns[1]);
+        int arr2[] = { 1, 2, 4, 6, 5 };
+        int UnsortedElement = getUnsortedElement(arr2);
+        System.out.println("Unsorted Element = " + UnsortedElement);
+        int[] arr3 = { 1, 2, 4, 5 };
+        int[] arr4 = { 2, 8, 4, 7, 10 };
+        int swapAltAns[] = swapAlternate(arr3);
+        System.out.println(Arrays.toString(swapAltAns));
+        int intersection[] = arrIntersection(arr3, arr4);
+        System.out.println(Arrays.toString(intersection));
+        int arr5[] = { 1, 2, 3, 4, 5 };
+        int altExtremeElements[] = altExtremeElements(arr5);
+        System.out.println(Arrays.toString(altExtremeElements));
     }
 }
